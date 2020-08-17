@@ -1,38 +1,106 @@
+@keyframes animatedBackground {
+  
+  from { background-position: 0 0; }
+  to { background-position: 100% 0; }
+  
+  
+  from {background-size: 100%;}
+  to {background-size: 150%;}
+  
+}
+
+
+@keyframes zoomOut {
+  
+}
+
 .App {
+  min-height: 100vh;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  background-image: url(stars.jpg);
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding-top: 0vh;
+  animation: animatedBackground 60s linear infinite alternate;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: calc(32px + 2vmin);
+  margin-bottom: 0rem;
+  margin-top: 1rem;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.subHeader {
+  font-size: calc(25px + 2vmin);
+  margin-bottom: 2rem;
+}
+
+.link{
+  color: #ffffff;
+}
+
+.link:hover {
+  opacity: .3;
+}
+
+.link#special {
+  color: #ffffff;
+  opacity: .5;
+}
+
+.bodyStyle {
+  margin-top: 2.5rem;
+  text-align: center;
+  font-size: calc(10px + 2vmin);
+  color: #ffffff;
+  margin-left: 10vmin;
+  margin-right: 10vmin;
+}
+
+button {
+  background-color: rgba(0, 0, 0, .75);
+  color: #ffffff;
+  width: 7rem;
+  height: 2rem;
+  border-width: .01rem;
+  font-size: 15px;
+  border-color: #ffffff;
+  border-radius: .85rem;
+}
+
+button:hover {
+  opacity: .5;
+}
+
+button#about {
+  margin-left: .3rem;
+  margin-right: .4rem;
+}
+
+button#github {
+  margin-left: .4rem;
+  margin-right: .4rem;
+}
+
+button#contact{
+  margin-left: .4rem;
+  margin-right: .3rem;
+}
+
+
+
+
+button:focus {
+  outline: none;
+}
+
+#linkedinLogo:hover {
+  opacity: .3;
 }
